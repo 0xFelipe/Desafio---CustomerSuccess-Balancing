@@ -1,0 +1,3 @@
+# Para saída mais detalhada similar ao Jest
+pytest>=6.0.0
+pytest-sugar  # Para saída mais colorida e bonita
