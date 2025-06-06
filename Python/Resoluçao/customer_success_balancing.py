@@ -14,7 +14,7 @@ def customer_success_balancing(customer_success, customers, customer_success_awa
     for cliente in customers: 
         while cs_index < disp_cs and css_disponiveis[cs_index]["score"] < cliente["score"]: # Verifico se o CS atual pode atender o cliente
             # Se o CS atual não pode atender, passo para o próximo CS
-            # Isso garante que o CS com menor score possível que atenda o cliente seja escolhido
+            # Isso garante que o CS com score mais proximo(maior) seja escolhido para atender o cliente
             cs_index += 1
         
         if cs_index < disp_cs: 
