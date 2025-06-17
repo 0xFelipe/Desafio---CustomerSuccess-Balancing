@@ -20,7 +20,10 @@ def customer_success_balancing(customer_success, customers, customer_success_awa
         if cs_index < disp_cs: 
             cs_id = css_disponiveis[cs_index]["id"]
             clientes_por_cs[cs_id] += 1
-    # Encontro o CS com mais clientes
+    return resultado(clientes_por_cs)  # Retorna o CS vencedor ou 0 em caso de empate
+
+
+def resultado(clientes_por_cs):
     mais_clientes = 0
     vencedor_id = 0
     empate = False
